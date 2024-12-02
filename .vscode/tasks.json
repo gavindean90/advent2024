@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "swift: Build Debug advent2024",
+            "type": "shell",
+            "command": "swift build",
+            "options": {
+                "cwd": "${workspaceFolder}/advent2024" // Set the working directory
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Build the Swift project in debug mode."
+        },
+        {
+            "label": "swift: Build Release advent2024",
+            "type": "shell",
+            "command": "swift build -c release",
+            "options": {
+                "cwd": "${workspaceFolder}/advent2024" // Set the working directory
+            },
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Build the Swift project in release mode."
+        }
+    ]
+}

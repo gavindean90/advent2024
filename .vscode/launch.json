@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": ["--day", "1", "--file", "${workspaceFolder}/site_ids.txt"],
+            "cwd": "${workspaceFolder}/advent2024", // Set to the directory containing `Package.swift`
+            "name": "Debug advent2024 Day 1",
+            "program": "${workspaceFolder}/advent2024/.build/debug/advent2024", // Path to the built executable
+            "preLaunchTask": "swift: Build Debug advent2024"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": ["--day", "2", "--file", "${workspaceFolder}/site_ids.txt"],
+            "cwd": "${workspaceFolder}/advent2024",
+            "name": "Debug advent2024 Day 2",
+            "program": "${workspaceFolder}/advent2024/.build/debug/advent2024",
+            "preLaunchTask": "swift: Build Debug advent2024"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": ["--day", "1"], // Debug with default "site_ids.txt" in current directory
+            "cwd": "${workspaceFolder}/advent2024",
+            "name": "Debug advent2024 Default File",
+            "program": "${workspaceFolder}/advent2024/.build/debug/advent2024",
+            "preLaunchTask": "swift: Build Debug advent2024"
+        }
+    ]
+}
