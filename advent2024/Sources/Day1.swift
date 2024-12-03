@@ -3,7 +3,7 @@ import Foundation
 enum Day1 {
     static func run(filePath: String?) {
         // Use the provided file path or fall back to the default
-        let path = filePath ?? "site_ids.txt"
+        let path = filePath ?? "../inputs/01.txt"
         
         // Lists to store the split strings
         var list1: [Int] = []
@@ -52,11 +52,6 @@ enum Day1 {
                 diff.append(difference)
             }
             
-            // Print the resulting differences
-            for difference in diff {
-                print("Diff: \(difference)")
-            }
-            
             // Print the sum of differences
             print("Total Sum of Differences: \(diff.reduce(0, +))")
 
@@ -72,11 +67,6 @@ enum Day1 {
             for num in list1 {
                 let count = countDict[num] ?? 0
                 sim.append(num * count)
-            }
-
-            // Print the similarities
-            for similarity in sim {
-                print("Sim: \(similarity)")
             }
 
             // Print the total similarity score

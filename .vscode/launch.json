@@ -4,7 +4,7 @@
         {
             "type": "lldb",
             "request": "launch",
-            "args": ["--day", "1", "--file", "${workspaceFolder}/site_ids.txt"],
+            "args": ["--day", "1", "--file", "${workspaceFolder}/inputs/01.txt"],
             "cwd": "${workspaceFolder}/advent2024", // Set to the directory containing `Package.swift`
             "name": "Debug advent2024 Day 1",
             "program": "${workspaceFolder}/advent2024/.build/debug/advent2024", // Path to the built executable
@@ -13,7 +13,7 @@
         {
             "type": "lldb",
             "request": "launch",
-            "args": ["--day", "2", "--file", "${workspaceFolder}/site_ids.txt"],
+            "args": ["--day", "2", "--file", "${workspaceFolder}/inputs/02.txt"],
             "cwd": "${workspaceFolder}/advent2024",
             "name": "Debug advent2024 Day 2",
             "program": "${workspaceFolder}/advent2024/.build/debug/advent2024",
