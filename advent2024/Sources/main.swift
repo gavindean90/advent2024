@@ -26,7 +26,9 @@ switch day {
 case 1:
     Day1.run(filePath: filePath)
 case 2:
-    Day2.run(filePath: filePath) // Update Day2 similarly
+    Day2.run(filePath: filePath)
+case 3:
+    Day3.run(filePath: filePath)
 default:
     print("Error: Day \(day) is not implemented yet.")
     exit(1)
