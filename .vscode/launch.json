@@ -32,6 +32,15 @@
         {
             "type": "lldb",
             "request": "launch",
+            "args": ["--day", "4", "--file", "${workspaceFolder}/inputs/04.txt"],
+            "cwd": "${workspaceFolder}/advent2024", // Set to the directory containing `Package.swift`
+            "name": "Debug advent2024 Day 4",
+            "program": "${workspaceFolder}/advent2024/.build/debug/advent2024", // Path to the built executable
+            "preLaunchTask": "swift: Build Debug advent2024"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "args": ["--day", "1"], // Debug with default "site_ids.txt" in current directory
             "cwd": "${workspaceFolder}/advent2024",
             "name": "Debug advent2024 Default File",

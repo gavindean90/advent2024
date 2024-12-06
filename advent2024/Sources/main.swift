@@ -29,6 +29,8 @@ case 2:
     Day2.run(filePath: filePath)
 case 3:
     Day3.run(filePath: filePath)
+case 4:
+    Day4.run(filePath: filePath)
 default:
     print("Error: Day \(day) is not implemented yet.")
     exit(1)
